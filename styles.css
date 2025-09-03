@@ -1,12 +1,26 @@
-.moviePic{
-	height:300px;
-	width:200px;
-	opacity: 50%; 
+/* Style the container */
+.container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
 }
+
+/* Center the image */
+.moviePic {
+  display: block;        /* Block-level element */
+  margin: 0 auto;        /* Horizontally center */
+  max-width: 300px;      /* Optional: limit image size */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Center and style the movie detail text */
 .movieDetail {
-  position: absolute;     
-  top: 50%;               
-  width: 100%;             
-  text-align: center;     
-  font-size: 24px; 
+  position: absolute;    /* Allow free positioning */
+  top: 80%;              /* Move the text down below the image */
+  width: 100%;           /* Span the full width */
+  text-align: center;    /* Center text horizontally */
+  font-size: 24px;       /* Larger text */
+  color: #333;           /* Text color */
+  font-weight: bold;     /* Make it stand out */
+  transform: translateY(-50%); /* Perfect vertical alignment */
 }
